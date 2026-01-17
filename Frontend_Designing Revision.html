@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refer for Revision</title>
+  <link rel="stylesheet" href="Frontend_Designing Revision.css">
+</head>
+
+<body>
+  Note :
+  1. To link a style write 'link:css'<br>
+
+  2. To link a javascript write 'script:src'. try adding an alert in your js using alert('....')<br>
+
+  3. Use meta description and meta keywords to add detailing to your website <br>
+  4. How to view your website on phone ? <br>
+  <ul>
+    <li>1.Find your ip address using 'ipconfig' in your terminal</li>
+    <li>2.open settings --> live preview --> instead of 127.... add your ipaddress</li>
+    <li>3.restart your vs code and open your website in web browser</li>
+    <li>4.if you are able to view your site with corresponding address , you will be able to open it in ur phone also
+    </li>
+    <li>5. finally type the ipaddres of your pc into ur phone web. </li>
+  </ul>
+  5. How to copy the same line in vs code ? alt , shift , down <br>
+  6. How to add random words/ random paragraphs . use lorem34/ lorem 26 <br>
+  7. How to add inline styling ? <br>
+  <p style="background-color: aquamarine;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga unde vitae
+    saepe reprehenderit vero distinctio tenetur maxime nesciunt neque! A, debitis voluptatibus. Vitae.</p>
+  8. You can add caption inside table <br>
+  9. How to construct tables
+  table tag
+  caption...optional
+
+  tableheader
+  tablerow_1
+  table heading
+  tableheader_close
+
+  tablebody
+  tablerow_2
+  table data
+
+  tablerow_3
+  table data
+  tablebody_close
+
+  table_footer
+  tablerow_end
+  table data
+  table_footer_close
+
+  <br>
+  10. How to add links.use "<anker></anker>" use targer = "_blank" within the opening of anker tag; use it if you want
+  the link to open in new tab <br>
+  11. How to add list ? you can use ordered or unordered lists <br>
+  unorderedlist
+  listitem1....close
+  listitem2....close
+  listitem3....close
+  unorderlist_close
+
+  12. you can also describe the type of ordered list within <ordered_list type='A.'>....</ordered_list> <br>
+
+  13. How to use definition_list,definition_term,definition_data ?<br>
+  <dl>
+    <dt>HTML</dt>
+    <dd>It is very important</dd>
+
+    <dt>CSS</dt>
+    <dd>It styles our script</dd>
+
+    <dt>JS</dt>
+    <dd>It is a PL</dd>
+  </dl>
+  14. What is CLS,LCP and FIRST INPUT DELAY <br>
+  <dl>
+    <dt>CLS (Cumulative Layout Shift): </dt>
+    <dd>Measures visual stability, ensuring elements don't jump around unexpectedly during loading, with a goal of 0.1
+      or less.</dd>
+
+    <dt>LCP (Largest Contentful Paint): </dt>
+    <dd>Measures loading performance by tracking when the largest image or text block becomes visible, aiming for under
+      2.5 seconds for a good experience.</dd>
+
+    <dt>FID (First Input Delay): </dt>
+    <dd>Measures responsiveness to a user's first interaction (like a click or tap), aiming for under 100 milliseconds;
+      it shows how quickly the page reacts. (Note: Google is shifting focus from FID to INP (Interaction to Next Paint),
+      which tracks all interactions, not just the first one, for better overall responsiveness.)</dd>
+  </dl>
+
+  15. To learn about forms , refer to Calender.html <br>
+  16. div and paragraph is a block element . nav, article,figure,figurecaption,header,section also <br>
+  <div style="background-color: aqua;">Iam a div</div>
+  <p style="background-color: rgb(210, 167, 110);">iam a para</p>
+  17. anker tag and span is inline. image <br>
+  <a style="background-color: aqua;" href="https://google.com">Google</a> <span
+    style="background-color: rgb(217, 161, 88);">Iam a span</span>
+
+  <h1> 18.id and classes</h1>
+  19. id refers very very uniquely to only element. cannot be reused. referred using # <br>
+  20. classes are mare to reuse. and can be applied to multiple elements .it is referred using a dot . multiple classes
+  can be referred in a single tag using space
+  <div id="intro_divv" class="divv ">21.This is an introductory paragraph. having a special id: intro_divv</div>
+  <div class="divv light_text">22. This is second paragraph having two classes : divv and light_text</div>
+  <div class="divv light_text">23. This is third paragraph having two classes again. divv and light_text</div>
+  <div>24. video and audio</div>
+  <video height="200" controls poster="Frontend_Designing Revision Image.jpg"
+    src="Frontend_Designing Revision Video.MP4">A cute family video </video>
+  <div>25.Audio can be preloaded in three ways : <br>
+    1.metadata : only the metadata on the audio is downloaded by the browser. <br>
+    2. auto : the audio is completely downloaded beforehand. <br>
+    3. none : no preloads are done
+  </div>
+  <div>26. Make sure to add controls to the audio and video , only then the media works.</div>
+  <audio src="Frontend_Designing Revision Audio.mp3" controls preload="metadata">Shreya Goshal</audio>
+
+
+  <div>27. Another form of media to embed: iframe. You can embed another website into your webpage using iframe </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=b7_nUbRiau9O0Xk4&amp;start=684"
+    title="YouTube video player" frameborder="0" allow="accelerometer; 
+      autoplay; 
+      clipboard-write;
+        encrypted-media; 
+        gyroscope; 
+        picture-in-picture; 
+        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+  <div>28. svgs are images generated within the editor. </div>
+  <img src="Frontend_Designing Revision SVG.svg" alt="my svg image">
+  <div>29. What to do if you want to show the paragraph tag ? or how the format of anker tag is. use &lessthan
+    &greaterter</div>
+  <div>30. You can use pretags when you want the script to appear on webapge as written on the editor</div>
+  <pre>I am writing this inside the pretag. notice how iam able to write 
+    
+     multiple lines and space . All of it will appear as desired.</pre>
+  <div>31. How to pur ampersand in the script? write &amp followed by a semi colon
+    &nbsp;</div>
+  <div> 32. I have written here &ampnbsp; to add spaces without without pretag. the number of nbsp tag = the number of
+    spaces added.</div>
+  <div>33. How to add the copyright symbol &copy? use '&ampcopy' followed by a colon</div>
+  <div>34. Use quotation tag and q tag to add quotations</div>
+  <div>35. You can use center tag and font tag but its already outdated. </div>
+  <div>36. You can use code tag to display code on your website.How to use it ? </div>
+
+  <pre id="code_tag">
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;CODE TAG&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    This is how you can embed a code tag
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+      </pre>
+
+  <h1>This is all about css now</h1>
+  <div>37.What is a selector and declaration in css.</div>
+
+  <pre><div>38. 
+When you write 
+  &lt;div&gt; {
+  &lt;background_color&gt; = red &lt;
+  }
+  &lt;/div&gt; 
+then your div tag is a selector and background_color is a declaration</div>
+    </pre>
+  <div>There are 3 types of css :
+    <ul>
+      <dt>Inline CSS</dt>
+      <dd>It is defined within the tag</dd>
+      <dt>Internal CSS</dt>
+      <dd>You use a style tag in the html header and define your styling</dd>
+      <dt>External CSS</dt>
+      <dd>The most used and fruitful</dd>
+    </ul>
+  </div>
+
+  <div>39.What about Child selectors ? how to use it ? </div>
+  <div>40.What if you want to apply a particular setting to the components navbar ,only when the navbar contains span.
+    i.e apply xyz property to span when it is within a navbar. </div>
+
+  <pre>;
+      &lt;header&gt;
+      &lt;style&gt;
+        nav &gt; span{
+          background-fcolor: White;
+          color: blue; 
+          
+        }
+      &lt;/style&gt;
+      &lt;/header&gt;
+      &lt;body&gt;
+        &lt;nav&gt;
+          &lt;span&gt;Home&lt;/span&gt;
+          &lt;span&gt;Features&lt;/span&gt;
+          &lt;span&gt;About Us&lt;/span&gt;
+          &lt;span&gt;Connect&lt;/span&gt;
+
+        &lt;/nav&gt;
+      &lt;/body&gt;
+    </pre>
+
+  <div>41. What about descendent selector ? Lets say you want that whenever an article occurs anywhere within a div
+    tag,apply certain properties to it </div>
+
+  <div>42. Then just write
+    <pre>&lt;Style&gt;{ <br> div article <br> background_color = red ;  <br> } <br> &lt;/Style&gt;</pre>
+  </div>
+
+  <div>43. When class name = '*', it represents universal selector</div>
+  <div>44.To study pseudo tags and first child visit bookmarks tab</div>
+  <div>45. <p><img height="100px" src="margin_collapse.jpg" alt="margin collapse"> <br> Notice here . box1 and box2 have
+      margin of 25px. but the distance between box1 and box2 is not 50px. this is because of concept of margin collapse.
+    </p>
+  </div>
+  <div>46. What is box_sizing = border_box for a component. This means that the specified height of that component
+    includes height + paddding + border. by default height does not include border and padding</div>
+
+  <div>47. How will you add fonts from google ?Go to google fonts, select a font or many. download it. click on import.
+    paste the import tag in header of html file and paste the styling of fonts in script file</div>
+  <div>48.How to change the font case ? use text-transform captitalise; in the script file. Use text decoration for
+    underlining. You can also use text-decoration-color or text-decoration-style or text-decoration-thickness to give
+    the color/style/thickness to underline</div>
+  <div>48. You can also choose text-overflow and text-indent</div>
+  <div id="Lorem23">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam soluta voluptatum
+    quibusdam dignissimos. Asperiores hic dicta quo, molestiae ut corrupti quidem minus.</div>
+  <div id="colors">49. Colors can be added in multiple ways
+    <ol>
+      <li>Color Keywords (red,green,magenta,yellow)</li>
+      <li>HEX colors (alpha numeric)</li>
+      <li>RGB and RGBA</li>
+      <li>HSL</li>
+    </ol>
+  </div>
+
+  <h3>SELECTORS,CASCADE ALGORITHM AND SPECIFICITY</h3>
+  <div>50. selectrors are of 6 types :
+    <ul>
+      <li>element selector(p / h1/ div)</li>
+      <li>class selector (cyellow / cpurple)</li>
+      <li>id selector (inavbar_top)</li>
+      <li>universal selector</li>
+      <li>attribute selector</li>
+      <li>pseudo_selector ( href: hover</li>
+    </ul>
+  </div>
+  <div>51.The cascade algorithm defines which styling selectors to choose in case of conflict. cpurple/cred/cyellow/h1
+  </div>
+  <div>52.So we have three parameters for that 1.) order 2.)specificity 3.) Origin (styles applied by the webbrowser cm
+    last 4.)importance (write keyword !important within the descriptor.</div>
+  <div>53. The order of specificty : inline -- id_selector -- class_selector/attribute_selector/pseudo_selector --
+    element_selector -- universal_selector</div>
+  <div>54. inline 1000 , id 100, class/attribute/pseudo 10, element 1 , univerasal 0 </div>
+
+  <div>55. if iam writing h1.cyellow , then its specificity will be the sum total of element + class specifity</div>
+
+  <div>56. This is an element selector applied on 'a' as a is an anket tag. <a href="https://google.com">Google|</a><a
+      href="https://youtube.com">Youtube|</a><a href="https://facebook.com">Facebook|</a></div>
+
+  <div data-x="b">57.This is an attribute selector. if u want to view its selector n descriptor, refer to styling page.
+  </div>
+
+  <div>58. This is an attribute selector with pseudo selector applied on this link. <a hrefi="a_s"
+      href="https://whatsapweb.com">Whatsapp Web</a></div>
+
+  <div>
+    <h4> element tag, element tag + pseudo tag , attribute tag , attribute tag + pseudo tag</h4>
+  </div>
+  <pre class="ccode_embed">
+<code >
+
+a {
+    color: brown;
+
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: 2px solid white;
+}
+
+[hrefi]{
+    color: rgb(233, 135, 7);
+}
+
+[hrefi]:hover{
+    font-size: larger;
+    border: 2px solid rgb(254, 84, 113);
+
+
+}
+      </code>
+    </pre>
+
+  <div>59. what is the value of following selector ? <br> a.charry.crohan[href]:hover { <br> background-color= green;
+    <br> }</div>
+  <div>60. answer = 1(element) + 10(class) + 10(class) + 10(attribute) + 10(pseudo) = 41</div>
+
+  <h2>Sizing </h2>
+  <div>61. if i use width = 80vw then it means 80% of the screen. </div>
+  <div>62. if i use margin auto to align the component in center for block elements only. not inline</div>
+  <div>63. if i use rem and em then the following happens
+  </div>
+  <div style="font-size: 12px;">Hello iam the parent div. my font size is 12px;
+    <div style="font-size: 2em;">Hello iam a child div. my font size is 24px as i inherit my font size from my parent.
+      (font = 2em;)</div>
+    <div style="font-size: 2rem;">Hello iam another child dev from the .iam 11px , because my font is 2rem ; while the
+      font size of root html is 22px (font = 2rem;)</div>
+
+
+  </div>
+  <div>64. if i use width = 50%, it means width = 50% of the PARENT. </div>
+  <div>65. if i use width = min_width to define the min value , then max can vary. </div>
+  <div>66. if i use width = 100vmin, means that in every device the min dimension (Whether height or width) should be
+    100px;
+
+    <h4>DISPLAY PROPERTIES</h4>
+    <div>67. what to do if u want your block element like div to appear as an inline element ? use property
+      'display=inline'. what is inline vs inline-block inline property prevents you from :- <br> a.) having margin and
+      padding from the top. <br> b.)having a height/width as desired. <br>hence u must use inline-block. </div>
+    <div>if a parent div has 4 divs, and u want to display them as inline, then apply inline property to all 4 boxes,
+      not the main div. </div>
+    <div>68. visibility: hidden vs display : none. visibility hidden means only the content disappears, its allocated is
+      not deallocated. while display none deallocates the area and adjusts the next component there instead. </div>
+    <h4>Note: for Navbar_top</h4>
+    <div>on my navbar , i did display : flex , and justify-content - center; it centered all my navar items in the
+      center</div>
+    <div>69. display : inline-flex vs display :flex . flex will show the containers flowing downwards. inline-flex will
+      put all the containers in one line. as the name says in-line</div>
+    <div>70. By default list style type is disc and is outside the list, use list style type inside to shift it inside.
+      if ur structure of navbar is : nav-ul-li , then apply display inline to li. and padding. </div>
+
+
+    <div class="coverflow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint sit et nesciunt nihil
+      incidunt ut iusto cum assumenda eos dignissimos perferendis magni animi commodi debitis cupiditate, expedita
+      deleniti quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab voluptas perferendis animi nemo
+      deserunt nihil autem totam? Atque eveniet pariatur exercitationem earum minus! Unde alias sint aperiam ut earum
+      blanditiis! Laborum, facilis deserunt? Sequi neque tempora libero deleniti totam reiciendis voluptas vitae
+      accusantium ex?</div>
+</body>
+
+<div>Note : 1.) Use whitespace-wrap = nowrap for a complete horizontal scrollbar. no text flowing downwards.
+  2.) use overflow = auto/scroll for scroll bar on both axis. you can also you overflow-x and overflow-y.
+  3.) use text-overflow = ellipsis to clip the text that overflows and add dots instead. text overflow is meant for
+  cutting the text.
+</div>
+
+
+<div>Note : div: firstchild{....} refers to the first child of div <br> div:nthchild(10){.....} refers to 10th child of
+  div</div>
+
+<h4>Postions</h4>
+<div>71. The positions can be relative / absolute/ fixed/sticky</div>
+<div>72. Absolute is always absolute to the screen. Relative positions of any component is always held relative to the
+  parent if it is positioned or grandparent if it is positioned or great grand parent ....... or the root element
+  (html). the position of the parent can be relative/sticky/fixed. <h5>even if the parents has
+    transform/filter/perpective properties still html sees the parent as positioned. </h5>
+</div>
+<div>73. fixed vs sticky. fixed is always static, never moves. sticky is moving until the scrollbar reaches a particular
+  point and then it acts sticky. fixed can be used when u u want navbar to be completely fixed at the top. sticky can be
+  use if u want navbar to move up as u scroll the screen and then stick to the top. </div>
+
+  <pre>
+    <div> 74. Note.
+      while creating a navbar you have two options. navbar - ul - li 
+      1. either make li as inline (not recommended)
+      2. make the ul as flex. here you can also use justify content center and set then set the margin for li. (recommended)
+      
+    </div>
+  </pre>
+  <pre>
+    <div>75. variables can be described in the style tag.
+      <pre class="ccode_embed">
+        <code>
+          < style>
+                  :root{
+                    --primcolor: blue;
+                    --seccolor: lightblue;
+
+                    --defopaq: 10%;
+                    --deffont-size: small;
+                  }
+
+          < /style >
+        </code>
+      </pre> 
+      <pre class="ccode_embed">
+        <code>
+          how to use it using code ?
+           color : var(--primcolor); 
+           color:var(--seccolor)
+        </code>
+      </pre>
+    </div>
+  </pre>
+  
+
+</html>

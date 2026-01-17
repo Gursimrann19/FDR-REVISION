@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer for Revision 2
+    </title>
+    <link rel="stylesheet" href="FDR_2.css">
+</head>
+<body>
+    <h1>Frontend Designing Revision 2</h1>
+    <div>1.Using media Query. add a style tag to the head of the html or your css.</div>
+    <pre class="cembeddedcode">
+    <code>
+
+use '@ media only screen and (...condition ....max-width:455;){ 
+    body
+    {background-color: black;
+    }
+};
+    </code>
+    </pre>
+    <div> 2. What is float ? an attribute of image which decides where the iamge will float on screen. use display:flowroot in the parent body so that image fits in the parent border.</div>
+    <div>3. What is clear ? use clear: left; on a paragraph if you want the left side of para to be empty. define it in style tag</div>
+    Important.
+    <div> 4. Can you insert elements dynamically using css.  yes use pseudo elements. eg:
+    </div>
+<pre class="cembeddedcode">
+<code>
+.mainnavbar:: before{
+    < nav>This is the top navbar< /nav>
+}
+::selection{
+    background-color:black;
+    color:white
+}
+
+.mainnavbar::firstline{
+    font-weight: 200;
+
+}
+.mainnavbar::firstletter{
+    font-size:small;
+}
+
+input::placeholder{
+    font-size: small;
+}
+</code>
+        </pre>
+    
+
+    <div>5.How to use flex ? apply display: flex to the parent body. use jutify-content: center to put items on the helf of main exis and align items to put items on the half of cross axis.</div>
+    <div>Use flex-direction and flex-wrap. use flex flow to set both the things in one go. </div>
+    <div>align items vs align content. use align items for one line. use align content for centering of  multiple lines</div>
+    <div>Use gap: 30px; on parent body. to define the gap between flex items only.</div>
+    <div>all the above mentioned properties are defined on the parent body</div>
+    <div>all the below mentioned prp are defined on flex items.Use .order-1 { order: 1 }; the default order is 0. higher number comes later.</div>
+    <div>use flex-grow and flex-shrink.(like col-span and row-span in table) </div>
+    <div>flex-shrink is used when u decrease the width of screen</div>
+    <div>use align-self to overwrite the configuration of one flex item.</div>
+    <div>6.How to use grid ? grid is used for converting an container into a grid consisting of rows and columns. </div>
+    <div>on the parent, write display:grid grid-template-column: 120px 100px; this means u will form 2 columns of 120px and 100px . you can also say [nameline1] 120px [nameline2] 100px the height of rows will depend on child's height </div>
+    <div>what is grid track? space between 2 parallel lines. what is grid area ? space between 4 adjacent lines</div>
+    
+    <div>item property : you can define grid-row: start/end for any particular component. eg. .cclass4 {grid-row: 1/3; }</div>
+    <div>you can also use justify self on grid items. and justify-items on grid parent. These properties are applied within a grid cell. </div>
+
+    Note
+    <h4>
+    <div>While defining grid-columns on parents grid. instead of giving 120px 100px you can also give 'fr' . <br>grid- column: 1fr 2fr 1fr means divide the parent container into 3 fractions with center twice in width. </div></h4>
+
+    Note
+    <div>you can also use grid-template-area on the parent. use: </div>
+    <pre class="cembeddedcode">
+        <code>
+            .conatainerg { 
+                grid- template- areas:
+                "nav nav nav"
+                "sidebar content content"
+                "footer footer footer";
+
+                grid-template- columns : 1fr 2fr 1fr
+                or 
+                grid-template-columns : repeat(4,1fr)
+                OR 
+                grid-template -column : repeat(4, minmax(100px,1fr));
+
+            }
+            .item-11 {
+                grid- area : nav ;
+            }
+            .item-22{
+                grid- area: sidebar;
+            
+            }
+
+            .item-55{
+                grid- area: footer;
+            }
+        </code>
+    </pre>
+    <h4>Use gap in flex and grid instead of padding.</h4>
+    <h4>container --> grid --> item --> text </h4>
+    <h4>use align-content , justify-content, when u want to center the grid in the container. YOU CAN ALSO USE PLACE-CONTENT INSTEAD. IT ENCAPSULATES BOTH. </h4>
+    <h4>use align-items, justify-items, when u want to center the items within grid</h4>
+    <h4>juse align-self , justify-self , when u want to center the text within the item. this is applied on the item body. not on the parent body</h4>
+
+
+    <h3>Transition and Transformation</h3>
+    <div>7. there are 4 transition features . property,  duration, delay and timing function. how to use it </div>
+    <pre class="cembeddedcode">
+        <code>
+
+
+    ---------------------------HTML---------------------------------------------
+    < div class="ccontainer">Hello iam container
+        < div class="ccard" id="itransition"> Hello iam a card < /div>
+    < /div>  
+    
+    ----------------------------CSS--------------------------------------------
+.ccard{
+    background-color: red;
+    height: 300px;
+    width: 220px;
+    transition-property: color background-color transform ;
+    transition-duration: 5s ;
+    transition-timing-function: ease-in-out ;
+    transition-delay: 1s ;
+}
+
+#itransition{   
+    background-color: black;
+    transform: translateX(10vw) translateY(2vh);
+    color: white;
+    width: 300px;
+    height: 110px;
+}
+        </code>
+    </pre>
+
+
+    <div>8.Similarly you can use animation.you dont need to create a separate class as needed for transitions. and associate that animation with the component desired.  in animation you write @keyframes { to {....} from{...}}</div>
+
+    <pre class="cembeddedcode">
+        <code>
+ ---------------------------HTML-------------------------------------------
+
+< div class="ccontainer">Hello iam container
+    < div class="cnavribbon">< div>Check Results< /div>< div>Register now for olympiad< /div>< div>Portal for scholarships open. < /div>< /div>
+< /div>
+---------------------------CSS--------------------------------------------
+
+.cnavribbon{
+    border: 2px solid black;
+    margin: 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    animation: Animation1;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-play-state: running;
+    animation-direction: alternate;
+    position: absolute;
+    top: 0px;left: 0px;
+    width: 100vw;
+}
+@keyframes Animation1 {
+    from{
+        background-color: red;
+    }
+    to{
+        transform: translateX(99vw);
+        background-color: blueviolet;
+    }
+}
+        </code>
+    </pre>
+
+    <h4>OBJECT FTI AND OBJECT POSITION </h4>
+    <DIV>9.Use object fit : cover or contain on an image to fit it in a container. cover means crop. contain means extra space. the default image fit is fill which streches the image to fit it in  a cover.</DIV>
+    <div>10. use object position to retain any one corner of the image if its a  very important part of the image.</div>
+    <div>Use background image to set an image as an bg. by default the background image repeats if it doesnt fit into the container or the screen. </div>
+    <div>for images contrast,opacity is always [0,1] , invert is 0 or 1.  use filter: blur/contrast, brightness </div>
+</body>. 
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+dd{
+    text-indent: 50px;
+}
+
+body{
+    background-color: rgb(252, 242, 229);
+}
+td{
+    border: 1px solid black;
+}
+.divv {
+    background-color: rgb(61, 45, 12);
+}
+.light_text {
+    color: ivory;
+}
+#intro_divv{
+    background-color: cadetblue;
+
+}
+
+#code_tag{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+#Lorem23{
+    width: 109px;
+    height: 176px;
+     border: 4px solid rgb(120, 66, 66);
+    overflow: scroll;
+    text-overflow: ellipsis;
+    
+}
+
+#colors{
+    /* background-color: #a3dff5; */
+    border: 2px solid rgb(81, 50, 50);
+    /* background-color: hsl(196, 52, 24); */
+    /* background-color: #927e7e; */
+    background-color: rgba(120, 66, 66, 0.811);
+    color: white;
+}
+
+[data-x]{
+    color: red;
+}
+
+a {
+    color: brown;
+
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: 2px solid white;
+}
+
+
+
+[hrefi]{
+    color: rgb(233, 135, 7);
+}
+
+[hrefi]:hover{
+    font-size: larger;
+    border: 2px solid rgb(254, 84, 113);
+
+
+}
+
+
+.ccode_embed{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 80vw;
+    height: 240px;
+    padding: 10px;
+    padding-left: 80px;
+    overflow: scroll;
+
+}
+.coverflow{
+    width: 440px;
+    height: 220px;
+    border: 2px solid purple;
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}

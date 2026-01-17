@@ -1,0 +1,20 @@
+*{
+    margin: 20px 100px;
+    
+}
+div{
+    margin: 0px 100px;
+}
+
+.cembeddedcode{
+    background-color: black;
+    color: white;
+    width: 900px;
+    height: 400px;
+    overflow: auto;
+
+    padding: 20px;
+
+
+}
+
